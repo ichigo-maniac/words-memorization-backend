@@ -19,13 +19,14 @@
     <!-- Properties -->
     <properties>
         <spring.boot.version>2.1.1.RELEASE</spring.boot.version>
-        <spring.cloud.config.server.version>2.0.2.RELEASE</spring.cloud.config.server.version>
+        <spring.cloud.version>2.0.2.RELEASE</spring.cloud.version>
     </properties>
 
 
      <!--Modules-->
     <modules>
         <module>infrastructure/words-memorization-cloud-config</module>
+        <module>infrastructure/words-memorization-services-registry</module>
     </modules>
 
 

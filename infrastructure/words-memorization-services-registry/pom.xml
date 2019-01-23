@@ -9,15 +9,16 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>words-memorization-cloud-config</artifactId>
+    <artifactId>words-memorization-services-registry</artifactId>
 
     <!-- Dependencies -->
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
             <version>${spring.cloud.version}</version>
         </dependency>
     </dependencies>
+
 
 </project>
