@@ -1,0 +1,6 @@
+version: '2'
+services:
+  words-memorization-services-registry:
+    build: ./infrastructure/words-memorization-services-registry/
+  words-memorization-cloud-config:
+    build: ./infrastructure/words-memorization-cloud-config/
