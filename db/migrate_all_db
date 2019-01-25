@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+. all_migrate.properties
+./liquibase --driver=org.postgresql.Driver --logLevel=debug --changeLogFile=changelogs/pii-service/changelog.master.xml --url=$PII_SERVICE_DB_URL --username=$PII_SERVICE_DB_USERNAME --password=$PII_SERVICE_DB_PASSWORD update
