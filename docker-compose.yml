@@ -10,3 +10,5 @@ services:
       - "8761:8761"
   users-service:
     build: ./services/users-service/
+  words-service:
+    build: ./services/words-service/

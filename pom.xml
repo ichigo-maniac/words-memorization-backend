@@ -81,6 +81,7 @@
         <module>infrastructure/words-memorization-cloud-config</module>
         <module>infrastructure/words-memorization-services-registry</module>
         <module>services/users-service</module>
+        <module>services/words-service</module>
     </modules>
 
 </project>
