@@ -2,3 +2,4 @@
 
 . migrate_all_db.properties
 ./liquibase --driver=org.postgresql.Driver --logLevel=debug --changeLogFile=changelogs/users-service/changelog.master.xml --url=$USERS_SERVICE_DB_URL --username=$USERS_SERVICE_DB_USERNAME --password=$USERS_SERVICE_DB_PASSWORD update
+./liquibase --driver=org.postgresql.Driver --logLevel=debug --changeLogFile=changelogs/words-service/changelog.master.xml --url=$WORDS_DB_URL --username=$WORDS_DB_USERNAME --password=$WORDS_DB_PASSWORD update

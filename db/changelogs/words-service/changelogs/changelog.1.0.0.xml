@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="tag.version-1.0.0" author="words_memorization">
+        <tagDatabase tag="version-1.0.0"/>
+    </changeSet>
+
+    <changeSet id="init-scheme" author="words_memorization">
+
+        <!-- Kanji -->
+        <createTable tableName="kanji">
+            <column name="id" type="UUID" remarks="ID">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="display_text" type="VARCHAR(10)" remarks="Display text">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <!-- Words -->
+        <createTable tableName="words">
+            <column name="id" type="UUID" remarks="ID">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="display_text" type="VARCHAR(255)" remarks="Display text">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hiragana_text" type="VARCHAR(255)" remarks="Hiragana transcription">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+
+</databaseChangeLog>
