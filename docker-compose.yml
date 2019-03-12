@@ -8,3 +8,5 @@ services:
     build: ./infrastructure/words-memorization-services-registry/
     ports:
       - "8761:8761"
+  users-service:
+    build: ./services/users-service/
