@@ -24,6 +24,7 @@
         <lombok.version>1.18.4</lombok.version>
         <postgresql.version>42.2.5</postgresql.version>
         <tomcat.version>8.0.30</tomcat.version>
+        <springfox.swagger.version>2.9.2</springfox.swagger.version>
     </properties>
 
     <!-- Dependencies -->
@@ -74,10 +75,29 @@
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
         </dependency>
+
+        <!-- Swagger -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox.swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${springfox.swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-bean-validators</artifactId>
+            <version>${springfox.swagger.version}</version>
+        </dependency>
+
     </dependencies>
 
      <!--Modules-->
     <modules>
+        <module>infrastructure/words-memorization-common</module>
         <module>infrastructure/words-memorization-cloud-config</module>
         <module>infrastructure/words-memorization-services-registry</module>
         <module>services/users-service</module>
