@@ -12,3 +12,7 @@ services:
     build: ./services/users-service/
   words-service:
     build: ./services/words-service/
+  words-management-facade:
+    build: ./facades/words-management-facade/
+    ports:
+      - "44050:44050"

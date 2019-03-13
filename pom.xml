@@ -102,6 +102,7 @@
         <module>infrastructure/words-memorization-services-registry</module>
         <module>services/users-service</module>
         <module>services/words-service</module>
+        <module>facades/words-management-facade</module>
     </modules>
 
 </project>

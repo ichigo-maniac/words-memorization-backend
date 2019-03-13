@@ -1,4 +1,4 @@
-package com.words.memorization.words.service.configuration;
+package com.words.memorization.words.management.facade.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,8 +25,8 @@ public class SwaggerConfiguration {
         return new Docket(DocumentationType.SWAGGER_2)
             .directModelSubstitute(Calendar.class, String.class)
             .apiInfo(new ApiInfo(
-                "Words memorization. Words service API",
-                "Words memorization. Words service API",
+                "Words memorization. Words management facade API",
+                "Words memorization. Words management facade API",
                 "1.0",
                 null,
                 null,
