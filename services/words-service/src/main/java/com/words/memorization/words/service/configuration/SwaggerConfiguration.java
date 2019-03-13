@@ -18,7 +18,7 @@ import java.util.HashSet;
 @Configuration
 @EnableSwagger2
 @Import(springfox.bean.validators.configuration.BeanValidatorPluginsConfiguration.class)
-public class SwaggerConfigiguration {
+public class SwaggerConfiguration {
 
     @Bean
     public Docket api() {
