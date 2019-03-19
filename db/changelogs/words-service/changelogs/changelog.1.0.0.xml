@@ -22,7 +22,7 @@
                 <constraints nullable="false"/>
             </column>
             <column name="display_text" type="VARCHAR(10)" remarks="Display text">
-                <constraints nullable="false"/>
+                <constraints nullable="false" unique="true"/>
             </column>
             <column name="jlpt_level" type="VARCHAR(255)" remarks="JLPT level"></column>
         </createTable>

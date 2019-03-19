@@ -17,7 +17,7 @@ public class KanjiEntity extends AbstractEntity {
     /**
      * Display text
      */
-    @Column(name = "display_text", length = 10, nullable = false)
+    @Column(name = "display_text", length = 10, nullable = false, unique = true)
     private String displayText;
 
     /**

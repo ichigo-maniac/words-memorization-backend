@@ -1,6 +1,7 @@
 package com.words.memorization.words.management.facade.api;
 
 import com.words.memorization.words.common.api.ApiBase;
+import com.words.memorization.words.common.exceptions.ResourceNotFoundException;
 import com.words.memorization.words.facades.common.dto.KanjiDto;
 import com.words.memorization.words.management.facade.api.model.PostKanjiInput;
 import com.words.memorization.words.management.facade.services.KanjiClientService;
@@ -24,7 +25,12 @@ public class KanjiManagementApi extends ApiBase {
     @GetMapping("/by_display_text/{displayText}")
     public KanjiDto getKanjiByDisplayText(@ApiParam(value = "Display text", example = "日")
                                           @PathVariable("displayText") String displayText) {
-        return kanjiClientService.getKanjiByDisplayText(displayText);
+        KanjiDto kanji =  kanjiClientService.getKanjiByDisplayText(displayText);
+        if (kanji != null) {
+            return kanji;
+        } else {
+            throw new ResourceNotFoundException("E000", "Kanji hasn't been found");
+        }
     }
 
     @ApiOperation(value = "Create a new kanji")
