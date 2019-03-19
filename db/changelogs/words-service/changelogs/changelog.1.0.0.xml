@@ -18,15 +18,22 @@
             <column name="id" type="UUID" remarks="ID">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
+            <column name="created" type="TIMESTAMP" remarks="Creation datetime">
+                <constraints nullable="false"/>
+            </column>
             <column name="display_text" type="VARCHAR(10)" remarks="Display text">
                 <constraints nullable="false"/>
             </column>
+            <column name="jlpt_level" type="VARCHAR(255)" remarks="JLPT level"></column>
         </createTable>
 
         <!-- Words -->
         <createTable tableName="words">
             <column name="id" type="UUID" remarks="ID">
                 <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="created" type="TIMESTAMP" remarks="Creation datetime">
+                <constraints nullable="false"/>
             </column>
             <column name="display_text" type="VARCHAR(255)" remarks="Display text">
                 <constraints nullable="false"/>

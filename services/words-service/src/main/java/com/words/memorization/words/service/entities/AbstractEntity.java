@@ -1,11 +1,10 @@
 package com.words.memorization.words.service.entities;
 
+import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
 
 @MappedSuperclass
 public abstract class AbstractEntity {
@@ -16,6 +15,11 @@ public abstract class AbstractEntity {
     public UUID getId() {
         return id;
     }
+
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "created", nullable = false)
+    private Date created;
+    public Date getCreated() { return created; }
 
     @Override
     public boolean equals(Object o) {
@@ -28,6 +32,11 @@ public abstract class AbstractEntity {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    @PrePersist
+    protected void onBeforeInsert() {
+        this.created = new Date();
     }
 
 }

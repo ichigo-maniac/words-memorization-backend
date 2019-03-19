@@ -1,5 +1,6 @@
 package com.words.memorization.words.service.entities;
 
+import com.words.memorization.words.service.enums.JLPTLevel;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,6 +21,12 @@ public class KanjiEntity extends AbstractEntity {
      */
     @Column(name = "display_text", length = 10, nullable = false)
     private String displayText;
+
+    /**
+     * JLPT level
+     */
+    @Column(name = "jlpt_level")
+    private JLPTLevel jlptLevel;
 
 
 }
