@@ -1,10 +1,12 @@
 package com.words.memorization.words.management.facade.services;
 
+import com.words.memorization.words.facades.common.dto.KanjiDto;
 import com.words.memorization.words.management.facade.api.model.PostKanjiInput;
-import java.util.UUID;
 
 public interface KanjiClientService {
 
-    UUID createKanji(PostKanjiInput kanjiInput);
+    KanjiDto getKanjiByDisplayText(String displayText);
+
+    KanjiDto createKanji(PostKanjiInput kanjiInput);
 
 }

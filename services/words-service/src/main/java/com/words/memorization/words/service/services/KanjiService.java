@@ -5,6 +5,8 @@ import com.words.memorization.words.service.entities.KanjiEntity;
 
 public interface KanjiService {
 
+    KanjiEntity getKanjiByDisplayText(String displayText);
+
     KanjiEntity createKanji(PostKanjiInput kanjiInput);
 
 }
