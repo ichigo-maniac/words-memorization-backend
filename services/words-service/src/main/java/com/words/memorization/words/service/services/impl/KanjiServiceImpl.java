@@ -16,6 +16,7 @@ public class KanjiServiceImpl implements KanjiService {
     @Autowired
     private KanjiRepository kanjiRepository;
 
+    @Autowired
     private WordsMapper wordsMapper;
 
     @Override

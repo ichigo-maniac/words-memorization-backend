@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients
+@EnableFeignClients(basePackages = "com.words.memorization.words.facades.common")
 public class WordsManagementFacadeApplication {
 
     public static void main(String[] args) {
