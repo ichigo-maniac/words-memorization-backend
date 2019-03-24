@@ -27,6 +27,38 @@
             <column name="jlpt_level" type="VARCHAR(255)" remarks="JLPT level"></column>
         </createTable>
 
+        <!-- On kanji values -->
+        <createTable tableName="on_kanji_values">
+            <column name="id" type="UUID" remarks="ID">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="created" type="TIMESTAMP" remarks="Creation datetime">
+                <constraints nullable="false"/>
+            </column>
+            <column name="display_text" type="VARCHAR(10)" remarks="Display text">
+                <constraints nullable="false"/>
+            </column>
+            <column name="kanji_id" type="UUID" remarks="Kanji's ID">
+                <constraints nullable="false" foreignKeyName="fk_on_kanji_values_kanji" references="kanji(id)"/>
+            </column>
+        </createTable>
+
+        <!-- Kun kanji values -->
+        <createTable tableName="kun_kanji_values">
+            <column name="id" type="UUID" remarks="ID">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="created" type="TIMESTAMP" remarks="Creation datetime">
+                <constraints nullable="false"/>
+            </column>
+            <column name="display_text" type="VARCHAR(10)" remarks="Display text">
+                <constraints nullable="false"/>
+            </column>
+            <column name="kanji_id" type="UUID" remarks="Kanji's ID">
+                <constraints nullable="false" foreignKeyName="fk_kun_kanji_values_kanji" references="kanji(id)"/>
+            </column>
+        </createTable>
+
         <!-- Words -->
         <createTable tableName="words">
             <column name="id" type="UUID" remarks="ID">

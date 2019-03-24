@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Set;
 
 /**
  * Kanji entity class
@@ -26,6 +27,18 @@ public class KanjiEntity extends AbstractEntity {
     @Column(name = "jlpt_level")
     @Enumerated(EnumType.STRING)
     private JLPTLevel jlptLevel;
+
+    /**
+     * On values
+     */
+    @OneToMany(mappedBy = "kanji", orphanRemoval = true, fetch = FetchType.LAZY)
+    private Set<OnKanjiValueEntity> onValues;
+
+    /**
+     * Kun values
+     */
+    @OneToMany(mappedBy = "kanji", orphanRemoval = true, fetch = FetchType.LAZY)
+    private Set<KunKanjiValueEntity> kunValues;
 
 
 }
