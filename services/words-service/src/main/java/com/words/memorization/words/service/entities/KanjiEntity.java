@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -32,14 +31,14 @@ public class KanjiEntity extends AbstractEntity {
     /**
      * On values
      */
-    @OneToMany(mappedBy = "kanji", orphanRemoval = true, fetch = FetchType.LAZY)
-    private List<OnKanjiValueEntity> onValues;
+    @OneToMany(mappedBy = "kanji", orphanRemoval = true, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<OnKanjiValueEntity> onValues;
 
     /**
      * Kun values
      */
-    @OneToMany(mappedBy = "kanji", orphanRemoval = true, fetch = FetchType.LAZY)
-    private List<KunKanjiValueEntity> kunValues;
+    @OneToMany(mappedBy = "kanji", orphanRemoval = true, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<KunKanjiValueEntity> kunValues;
 
 
 }

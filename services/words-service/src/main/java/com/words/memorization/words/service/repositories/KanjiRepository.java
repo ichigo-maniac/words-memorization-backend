@@ -10,6 +10,8 @@ import java.util.UUID;
 public interface KanjiRepository extends JpaRepository<KanjiEntity, UUID> {
 
     @Query("SELECT kanji FROM Kanji as kanji " +
+            "LEFT JOIN FETCH kanji.onValues " +
+            "LEFT JOIN FETCH kanji.kunValues " +
             "WHERE kanji.displayText = :displayText")
     KanjiEntity getKanjiByDisplayText(@Param("displayText") String displayText);
 

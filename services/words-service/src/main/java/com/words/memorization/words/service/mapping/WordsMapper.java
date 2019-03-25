@@ -1,6 +1,8 @@
 package com.words.memorization.words.service.mapping;
 
 import com.words.memorization.words.service.api.dto.KanjiDto;
+import com.words.memorization.words.service.api.dto.KunKanjiValueDto;
+import com.words.memorization.words.service.api.dto.OnKanjiValueDto;
 import com.words.memorization.words.service.api.model.PostKanjiInput;
 import com.words.memorization.words.service.api.model.PostKunKanjiValueInput;
 import com.words.memorization.words.service.api.model.PostOnKanjiValueInput;
@@ -19,5 +21,9 @@ public interface WordsMapper {
     OnKanjiValueEntity toOnKanjiValueEntity(PostOnKanjiValueInput onKanjiValueInput);
 
     KunKanjiValueEntity toKunKanjiValueEntity(PostKunKanjiValueInput kunKanjiValueInput);
+
+    OnKanjiValueDto toOnKanjiValueDto(OnKanjiValueEntity onKanjiValueEntity);
+
+    KunKanjiValueDto toKunKanjiValueDto(KunKanjiValueEntity kunKanjiValueEntity);
 
 }
