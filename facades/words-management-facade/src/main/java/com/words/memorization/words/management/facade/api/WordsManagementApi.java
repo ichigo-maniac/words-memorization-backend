@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.UUID;
 
 @Api(description = "Words management operations API")
 @RestController
@@ -32,6 +33,18 @@ public class WordsManagementApi extends ApiBase {
             throw new ResourceNotFoundException("E000", "A word hasn't been found");
         }
     }
+
+    @ApiOperation(value = "Search a word by id")
+    @GetMapping("/words/{wordId}")
+    public WordDto getWordById(@ApiParam(value = "ID") @PathVariable("wordId") UUID wordId) {
+        WordDto word =  wordsClientService.getWordById(wordId);
+        if (word != null) {
+            return word;
+        } else {
+            throw new ResourceNotFoundException("E000", "A word hasn't been found");
+        }
+    }
+
 
     @ApiOperation(value = "Create a new word")
     @PostMapping(value = "/words//word")

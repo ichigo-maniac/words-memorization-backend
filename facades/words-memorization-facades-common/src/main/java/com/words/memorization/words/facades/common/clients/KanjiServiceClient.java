@@ -16,7 +16,10 @@ public interface KanjiServiceClient {
     @GetMapping("/api/kanji/by_display_text/{displayText}")
     KanjiDto getKanjiByDisplayText(@PathVariable("displayText") String displayText);
 
-    @PostMapping(value = "/api/kanji")
+    @GetMapping("/api/kanji/{kanjiId}")
+    KanjiDto getKanjiById(@PathVariable("kanjiId") UUID kanjiId);
+
+    @PostMapping("/api/kanji")
     KanjiDto createKanji(@RequestBody PostKanjiModel postKanjiModel);
 
 }

@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.validation.constraints.NotNull;
+import java.util.UUID;
 
 @Service("wordsClientService")
 public class WordsClientServiceImpl implements WordsClientService {
@@ -24,6 +25,11 @@ public class WordsClientServiceImpl implements WordsClientService {
     @Override
     public WordDto getWordByDisplayText(@NotNull String displayText) {
         return wordsServiceClient.getWordByDisplayText(displayText);
+    }
+
+    @Override
+    public WordDto getWordById(@NotNull UUID wordId) {
+        return wordsServiceClient.getWordById(wordId);
     }
 
     @Override

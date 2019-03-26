@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import javax.validation.constraints.NotNull;
+import java.util.UUID;
 
 @Service("kanjiService")
 public class KanjiServiceImpl implements KanjiService {
@@ -23,6 +24,11 @@ public class KanjiServiceImpl implements KanjiService {
     @Override
     public KanjiEntity getKanjiByDisplayText(@NotNull String displayText) {
         return kanjiRepository.getKanjiByDisplayText(displayText);
+    }
+
+    @Override
+    public KanjiEntity getKanjiById(@NotNull UUID kanjiId) {
+        return kanjiRepository.getKanjiById(kanjiId);
     }
 
     @Override

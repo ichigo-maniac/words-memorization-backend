@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.UUID;
 
 @Api(description = "Words operations API")
 @RestController
@@ -26,9 +27,15 @@ public class WordsApi extends ApiBase {
 
     @ApiOperation(value = "Search a word by display text")
     @GetMapping("/by_display_text/{displayText}")
-    public WordDto getKanjiByDisplayText(@ApiParam(value = "Display text", example = "日")
+    public WordDto getWordByDisplayText(@ApiParam(value = "Display text", example = "日")
                                           @PathVariable("displayText") String displayText) {
         return wordsMapper.toWordDto(wordsService.getWordByDisplayText(displayText));
+    }
+
+    @ApiOperation(value = "Search a word by id")
+    @GetMapping("/{wordId}")
+    public WordDto getWordById(@ApiParam(value = "ID") @PathVariable("wordId") UUID wordId) {
+        return wordsMapper.toWordDto(wordsService.getWordById(wordId));
     }
 
     @ApiOperation(value = "Create a new word")

@@ -11,6 +11,7 @@ import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
+import java.util.UUID;
 
 @Api(description = "Kanji management operations API")
 @RestController
@@ -25,6 +26,17 @@ public class KanjiManagementApi extends ApiBase {
     public KanjiDto getKanjiByDisplayText(@ApiParam(value = "Display text", example = "日")
                                           @PathVariable("displayText") String displayText) {
         KanjiDto kanji =  kanjiClientService.getKanjiByDisplayText(displayText);
+        if (kanji != null) {
+            return kanji;
+        } else {
+            throw new ResourceNotFoundException("E000", "Kanji hasn't been found");
+        }
+    }
+
+    @ApiOperation(value = "Search a kanji by id")
+    @GetMapping("/kanji/{kanjiId}")
+    public KanjiDto getKanjiById(@ApiParam(value = "ID") @PathVariable("kanjiId") UUID kanjiId) {
+        KanjiDto kanji =  kanjiClientService.getKanjiById(kanjiId);
         if (kanji != null) {
             return kanji;
         } else {

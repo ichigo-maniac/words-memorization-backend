@@ -11,6 +11,7 @@ import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
+import java.util.UUID;
 
 @Api(description = "Kanji operations API")
 @RestController
@@ -28,6 +29,12 @@ public class KanjiApi extends ApiBase {
     public KanjiDto getKanjiByDisplayText(@ApiParam(value = "Display text", example = "日")
                                           @PathVariable("displayText") String displayText) {
         return wordsMapper.toKanjiDto(kanjiService.getKanjiByDisplayText(displayText));
+    }
+
+    @ApiOperation(value = "Search a kanji by id")
+    @GetMapping("/{kanjiId}")
+    public KanjiDto getKanjiById(@ApiParam(value = "ID") @PathVariable("kanjiId") UUID kanjiId) {
+        return wordsMapper.toKanjiDto(kanjiService.getKanjiById(kanjiId));
     }
 
     @ApiOperation(value = "Create a new kanji")

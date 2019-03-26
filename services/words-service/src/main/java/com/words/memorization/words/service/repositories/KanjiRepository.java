@@ -15,4 +15,10 @@ public interface KanjiRepository extends JpaRepository<KanjiEntity, UUID> {
             "WHERE kanji.displayText = :displayText")
     KanjiEntity getKanjiByDisplayText(@Param("displayText") String displayText);
 
+    @Query("SELECT kanji FROM Kanji as kanji " +
+            "LEFT JOIN FETCH kanji.onValues " +
+            "LEFT JOIN FETCH kanji.kunValues " +
+            "WHERE kanji.id = :kanjiId")
+    KanjiEntity getKanjiById(@Param("kanjiId") UUID kanjiId);
+
 }

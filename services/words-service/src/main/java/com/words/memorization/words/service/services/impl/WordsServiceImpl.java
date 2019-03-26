@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.validation.constraints.NotNull;
+import java.util.Optional;
+import java.util.UUID;
 
 @Service("wordsService")
 public class WordsServiceImpl implements WordsService {
@@ -23,6 +25,12 @@ public class WordsServiceImpl implements WordsService {
     @Override
     public WordEntity getWordByDisplayText(@NotNull String displayText) {
         return wordRepository.getWordByDisplayText(displayText);
+    }
+
+    @Override
+    public WordEntity getWordById(@NotNull UUID wordId) {
+        Optional<WordEntity> wordResult = wordRepository.findById(wordId);
+        return wordResult.orElse(null);
     }
 
     @Override
