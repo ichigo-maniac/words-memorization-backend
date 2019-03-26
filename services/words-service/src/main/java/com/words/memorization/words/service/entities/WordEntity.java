@@ -1,11 +1,10 @@
 package com.words.memorization.words.service.entities;
 
+import com.words.memorization.words.service.enums.JLPTLevel;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Word's entity class
@@ -20,6 +19,13 @@ public class WordEntity extends AbstractEntity {
      */
     @Column(name = "display_text", nullable = false, unique = true)
     private String displayText;
+
+    /**
+     * JLPT level
+     */
+    @Column(name = "jlpt_level")
+    @Enumerated(EnumType.STRING)
+    private JLPTLevel jlptLevel;
 
     /**
      * Hiragana transcription

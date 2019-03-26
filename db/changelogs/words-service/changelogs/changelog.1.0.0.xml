@@ -24,7 +24,7 @@
             <column name="display_text" type="VARCHAR(10)" remarks="Display text">
                 <constraints nullable="false" unique="true"/>
             </column>
-            <column name="jlpt_level" type="VARCHAR(255)" remarks="JLPT level"></column>
+            <column name="jlpt_level" type="VARCHAR(255)" remarks="JLPT level"/>
         </createTable>
 
         <!-- On kanji values -->
@@ -70,6 +70,7 @@
             <column name="display_text" type="VARCHAR(255)" remarks="Display text">
                 <constraints nullable="false" unique="true"/>
             </column>
+            <column name="jlpt_level" type="VARCHAR(255)" remarks="JLPT level"/>
             <column name="hiragana_text" type="VARCHAR(255)" remarks="Hiragana transcription">
                 <constraints nullable="false"/>
             </column>
