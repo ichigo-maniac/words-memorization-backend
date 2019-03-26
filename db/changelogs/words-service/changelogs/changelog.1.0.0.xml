@@ -68,11 +68,13 @@
                 <constraints nullable="false"/>
             </column>
             <column name="display_text" type="VARCHAR(255)" remarks="Display text">
-                <constraints nullable="false"/>
+                <constraints nullable="false" unique="true"/>
             </column>
             <column name="hiragana_text" type="VARCHAR(255)" remarks="Hiragana transcription">
                 <constraints nullable="false"/>
             </column>
+            <column name="en_translate" type="VARCHAR(255)" remarks="Eng translate"/>
+            <column name="ru_translate" type="VARCHAR(255)" remarks="Rus translate"/>
         </createTable>
 
     </changeSet>

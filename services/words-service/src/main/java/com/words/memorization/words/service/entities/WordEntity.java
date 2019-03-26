@@ -18,7 +18,7 @@ public class WordEntity extends AbstractEntity {
     /**
      * Display text
      */
-    @Column(name = "display_text", nullable = false)
+    @Column(name = "display_text", nullable = false, unique = true)
     private String displayText;
 
     /**
@@ -26,5 +26,17 @@ public class WordEntity extends AbstractEntity {
      */
     @Column(name = "hiragana_text", nullable = false)
     private String hiraganaText;
+
+    /**
+     * Eng translate
+     */
+    @Column(name = "en_translate")
+    private String enTranslate;
+
+    /**
+     * Rus translate
+     */
+    @Column(name = "ru_translate")
+    private String ruTranslate;
 
 }
