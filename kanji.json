@@ -1,0 +1,192 @@
+[
+  {
+    "displayText": "一",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "イチ"
+      },
+      {
+        "displayText": "イツ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "ひとつ"
+      }
+    ]
+  },
+
+  {
+    "displayText": "人",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ニン"
+      },
+      {
+        "displayText": "ジン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "ひと"
+      }
+    ]
+  },
+  {
+    "displayText": "方",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ホウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "かた"
+      }
+    ]
+  },
+  {
+    "displayText": "日",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ニチ"
+      },
+      {
+        "displayText": "ジツ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "ひ"
+      },
+      {
+        "displayText": "か"
+      }
+    ]
+  },
+
+  {
+    "displayText": "文",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ブン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "もん"
+      }
+    ]
+  },
+
+  {
+    "displayText": "先",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "セン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "さき"
+      }
+    ]
+  },
+
+  {
+    "displayText": "生",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "セン"
+      },
+      {
+        "displayText": "ショウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "うむ"
+      },
+      {
+        "displayText": "うまれる"
+      },
+      {
+        "displayText": "いきる"
+      },
+      {
+        "displayText": "なま"
+      }
+    ]
+  },
+
+  {
+    "displayText": "何",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "カ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "なに"
+      },
+      {
+        "displayText": "なん"
+      }
+    ]
+  },
+
+  {
+    "displayText": "私",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "シ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "わたくし"
+      }
+    ]
+  },
+
+  {
+    "displayText": "学",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ガク"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "まなぶ"
+      }
+    ]
+  },
+
+  {
+    "displayText": "語",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ゴ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "かたる"
+      }
+    ]
+  }
+
+]

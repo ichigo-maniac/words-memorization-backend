@@ -22,7 +22,7 @@ public class PostKanjiInput {
     private String displayText;
 
     @Valid
-    @ApiModelProperty(value = "Kun values", position = 2)
+    @ApiModelProperty(value = "On values", position = 2)
     private List<PostOnKanjiValueInput> onValues;
 
     @Valid
