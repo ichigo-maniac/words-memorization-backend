@@ -36,7 +36,7 @@
   },
   {
     "displayText": "方",
-    "jlptLevel": "N5",
+    "jlptLevel": "N4",
     "onValues": [
       {
         "displayText": "ホウ"
@@ -71,7 +71,7 @@
 
   {
     "displayText": "文",
-    "jlptLevel": "N5",
+    "jlptLevel": "N4",
     "onValues": [
       {
         "displayText": "ブン"
@@ -80,6 +80,21 @@
     "kunValues": [
       {
         "displayText": "もん"
+      }
+    ]
+  },
+
+  {
+    "displayText": "本",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ホン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "もと"
       }
     ]
   },
@@ -146,7 +161,7 @@
 
   {
     "displayText": "私",
-    "jlptLevel": "N5",
+    "jlptLevel": "N4",
     "onValues": [
       {
         "displayText": "シ"

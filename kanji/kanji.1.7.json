@@ -1,0 +1,207 @@
+[
+  {
+    "displayText": "二",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "二"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "ふたつ"
+      }
+    ]
+  },
+
+  {
+    "displayText": "三",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "サン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "みっつ"
+      },
+      {
+        "displayText": "み"
+      }
+    ]
+  },
+
+  {
+    "displayText": "土",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ド"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "つち"
+      }
+    ]
+  },
+
+  {
+    "displayText": "大",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ダイ"
+      },
+      {
+        "displayText": "タイ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "おおきい"
+      }
+    ]
+  },
+
+  {
+    "displayText": "山",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "サン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "やま"
+      }
+    ]
+  },
+
+  {
+    "displayText": "木",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "モク"
+      },
+      {
+        "displayText": "ボク"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "き"
+      }
+    ]
+  },
+
+  {
+    "displayText": "中",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "チュウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "なか"
+      },
+      {
+        "displayText": "うち"
+      }
+    ]
+  },
+
+  {
+    "displayText": "四",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "シ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "よっつ"
+      },
+      {
+        "displayText": "よん"
+      },
+      {
+        "displayText": "よ"
+      }
+    ]
+  },
+  {
+    "displayText": "田",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "デン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "た"
+      }
+    ]
+  },
+
+  {
+    "displayText": "年",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ネン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "とし"
+      }
+    ]
+  },
+
+  {
+    "displayText": "室",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "シツ"
+      }
+    ]
+  },
+
+  {
+    "displayText": "教",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "キョウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "おしえる"
+      },
+      {
+        "displayText": "おそわる"
+      }
+    ]
+  },
+
+  {
+    "displayText": "部",
+    "jlptLevel": "N3",
+    "onValues": [
+      {
+        "displayText": "ブ"
+      }
+    ]
+  }
+
+]
