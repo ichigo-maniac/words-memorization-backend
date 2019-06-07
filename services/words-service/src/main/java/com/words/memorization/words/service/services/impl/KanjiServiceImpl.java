@@ -1,12 +1,17 @@
 package com.words.memorization.words.service.services.impl;
 
 import com.words.memorization.words.common.exceptions.BusinessException;
+import com.words.memorization.words.common.utils.SpecificationUtils;
 import com.words.memorization.words.service.api.model.PostKanjiInput;
 import com.words.memorization.words.service.entities.KanjiEntity;
+import com.words.memorization.words.service.enums.JLPTLevel;
 import com.words.memorization.words.service.mapping.WordsMapper;
 import com.words.memorization.words.service.repositories.KanjiRepository;
 import com.words.memorization.words.service.services.KanjiService;
+import com.words.memorization.words.service.specifications.KanjiSpecification;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import javax.validation.constraints.NotNull;
@@ -29,6 +34,17 @@ public class KanjiServiceImpl implements KanjiService {
     @Override
     public KanjiEntity getKanjiById(@NotNull UUID kanjiId) {
         return kanjiRepository.getKanjiById(kanjiId);
+    }
+
+    @Override
+    public Page<KanjiEntity> getKanjiList(JLPTLevel jlptLevel, Pageable pageable) {
+        if (jlptLevel != null) {
+            return kanjiRepository.findAll(
+                    SpecificationUtils.buildSpecification(KanjiSpecification.byJlptLevel(jlptLevel)),
+                    pageable);
+        } else {
+            return kanjiRepository.findAll(pageable);
+        }
     }
 
     @Override

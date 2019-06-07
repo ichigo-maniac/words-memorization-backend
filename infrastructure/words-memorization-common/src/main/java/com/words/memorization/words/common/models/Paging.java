@@ -15,11 +15,10 @@ import javax.validation.constraints.Min;
 public class Paging {
 
     @ApiModelProperty(value = "Page number", position = 1,
-            notes = "Page number counting starts from 1",
-            example = "1",
+            example = "0",
             allowEmptyValue = true)
-    @Min(value = 1, message = "Page number must be positive")
-    private int page = 1;
+    @Min(value = 0, message = "Page number must be positive or 0")
+    private int page = 0;
 
     @ApiModelProperty(value = "Page size", position = 2,
             notes = "Default value - 20",
