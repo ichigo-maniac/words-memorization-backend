@@ -2,7 +2,10 @@ package com.words.memorization.words.management.facade.api;
 
 import com.words.memorization.words.common.api.ApiBase;
 import com.words.memorization.words.common.exceptions.ResourceNotFoundException;
+import com.words.memorization.words.common.models.PagedOutput;
+import com.words.memorization.words.common.models.Paging;
 import com.words.memorization.words.facades.common.dto.KanjiDto;
+import com.words.memorization.words.management.facade.api.model.GetKanjiListInput;
 import com.words.memorization.words.management.facade.api.model.PostKanjiInput;
 import com.words.memorization.words.management.facade.services.KanjiClientService;
 import io.swagger.annotations.Api;
@@ -42,6 +45,12 @@ public class KanjiManagementApi extends ApiBase {
         } else {
             throw new ResourceNotFoundException("E000", "Kanji hasn't been found");
         }
+    }
+
+    @ApiOperation(value = "Search kanji items")
+    @GetMapping("/kanji/kanji_list")
+    public PagedOutput<KanjiDto> getKanjiList(@Valid GetKanjiListInput getKanjiListInput, @Valid Paging paging) {
+        return kanjiClientService.getKanjiList(getKanjiListInput.getJlptLevel(), paging);
     }
 
     @ApiOperation(value = "Create a new kanji")

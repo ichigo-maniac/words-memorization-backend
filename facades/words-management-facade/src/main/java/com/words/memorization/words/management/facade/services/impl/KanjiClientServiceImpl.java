@@ -1,8 +1,11 @@
 package com.words.memorization.words.management.facade.services.impl;
 
 import com.words.memorization.words.common.exceptions.BusinessException;
+import com.words.memorization.words.common.models.PagedOutput;
+import com.words.memorization.words.common.models.Paging;
 import com.words.memorization.words.facades.common.clients.KanjiServiceClient;
 import com.words.memorization.words.facades.common.dto.KanjiDto;
+import com.words.memorization.words.facades.common.enums.JLPTLevel;
 import com.words.memorization.words.facades.common.models.PostKanjiModel;
 import com.words.memorization.words.management.facade.api.model.PostKanjiInput;
 import com.words.memorization.words.management.facade.mapping.WordsMapper;
@@ -29,6 +32,11 @@ public class KanjiClientServiceImpl implements KanjiClientService {
     @Override
     public KanjiDto getKanjiById(@NotNull UUID kanjiId) {
         return kanjiServiceClient.getKanjiById(kanjiId);
+    }
+
+    @Override
+    public PagedOutput<KanjiDto> getKanjiList(JLPTLevel jlptLevel, @NotNull Paging paging) {
+        return null;
     }
 
     @Override
