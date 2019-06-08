@@ -37,7 +37,7 @@ public class KanjiServiceImpl implements KanjiService {
     }
 
     @Override
-    public Page<KanjiEntity> getKanjiList(JLPTLevel jlptLevel, Pageable pageable) {
+    public Page<KanjiEntity> getKanjiList(JLPTLevel jlptLevel, @NotNull Pageable pageable) {
         if (jlptLevel != null) {
             return kanjiRepository.findAll(
                     SpecificationUtils.buildSpecification(

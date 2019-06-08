@@ -6,16 +6,17 @@ import com.words.memorization.words.service.enums.JLPTLevel;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import javax.validation.constraints.NotNull;
 import java.util.UUID;
 
 public interface KanjiService {
 
-    KanjiEntity getKanjiByDisplayText(String displayText);
+    KanjiEntity getKanjiByDisplayText(@NotNull String displayText);
 
-    KanjiEntity getKanjiById(UUID kanjiId);
+    KanjiEntity getKanjiById(@NotNull UUID kanjiId);
 
-    Page<KanjiEntity> getKanjiList(JLPTLevel jlptLevel, Pageable pageable);
+    Page<KanjiEntity> getKanjiList(JLPTLevel jlptLevel, @NotNull Pageable pageable);
 
-    KanjiEntity createKanji(PostKanjiInput kanjiInput);
+    KanjiEntity createKanji(@NotNull PostKanjiInput kanjiInput);
 
 }

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 @EnableEurekaClient
-@PropertySource(value = "classpath:hibernate-jpa.properties")
+@PropertySource(value = {"classpath:hibernate-jpa.properties", "classpath:jackson.properties"})
 public class UsersServiceApplication {
 
     public static void main(String[] args) {
