@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableEurekaClient
 @EnableJpaRepositories(basePackages = "com.words.memorization.words.service.repositories")
 @EntityScan(basePackages = "com.words.memorization.words.service.entities")
-@PropertySource(value = "classpath:hibernate-jpa.properties")
+@PropertySource(value = {"classpath:hibernate-jpa.properties", "classpath:jackson.properties"})
 public class WordsServiceApplication {
 
     public static void main(String[] args) {

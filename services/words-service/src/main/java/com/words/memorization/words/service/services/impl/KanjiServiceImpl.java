@@ -40,10 +40,14 @@ public class KanjiServiceImpl implements KanjiService {
     public Page<KanjiEntity> getKanjiList(JLPTLevel jlptLevel, Pageable pageable) {
         if (jlptLevel != null) {
             return kanjiRepository.findAll(
-                    SpecificationUtils.buildSpecification(KanjiSpecification.byJlptLevel(jlptLevel)),
-                    pageable);
+                    SpecificationUtils.buildSpecification(
+                            KanjiSpecification.fetchOnAndKunValues(),
+                            KanjiSpecification.byJlptLevel(jlptLevel)),
+                            pageable);
         } else {
-            return kanjiRepository.findAll(pageable);
+            return kanjiRepository.findAll(
+                    SpecificationUtils.buildSpecification(KanjiSpecification.fetchOnAndKunValues()),
+                    pageable);
         }
     }
 
