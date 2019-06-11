@@ -1,12 +1,17 @@
 package com.words.memorization.words.service.services.impl;
 
 import com.words.memorization.words.common.exceptions.BusinessException;
+import com.words.memorization.words.common.utils.SpecificationUtils;
 import com.words.memorization.words.service.api.model.PostWordInput;
 import com.words.memorization.words.service.entities.WordEntity;
+import com.words.memorization.words.service.enums.JLPTLevel;
 import com.words.memorization.words.service.mapping.WordsMapper;
 import com.words.memorization.words.service.repositories.WordRepository;
 import com.words.memorization.words.service.services.WordsService;
+import com.words.memorization.words.service.specifications.WordSpecification;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.validation.constraints.NotNull;
@@ -31,6 +36,17 @@ public class WordsServiceImpl implements WordsService {
     public WordEntity getWordById(@NotNull UUID wordId) {
         Optional<WordEntity> wordResult = wordRepository.findById(wordId);
         return wordResult.orElse(null);
+    }
+
+    @Override
+    public Page<WordEntity> getWordsList(JLPTLevel jlptLevel, @NotNull Pageable pageable) {
+        if (jlptLevel != null) {
+            return wordRepository.findAll(
+                    SpecificationUtils.buildSpecification(WordSpecification.byJlptLevel(jlptLevel)),
+                    pageable);
+        } else {
+            return wordRepository.findAll(pageable);
+        }
     }
 
     @Override
