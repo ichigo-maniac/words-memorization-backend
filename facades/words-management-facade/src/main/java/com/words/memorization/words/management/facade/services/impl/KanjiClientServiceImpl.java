@@ -36,7 +36,7 @@ public class KanjiClientServiceImpl implements KanjiClientService {
 
     @Override
     public PagedOutput<KanjiDto> getKanjiList(JLPTLevel jlptLevel, @NotNull Paging paging) {
-        return null;
+        return kanjiServiceClient.getKanjiList(paging.getPage(), paging.getPageSize(), jlptLevel);
     }
 
     @Override
