@@ -1,0 +1,227 @@
+[
+  {
+    "displayText": "七",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "シチ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "ななつ"
+      },
+      {
+        "displayText": "なな"
+      },
+      {
+        "displayText": "なの"
+      }
+    ]
+  },
+  {
+    "displayText": "八",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "ハチ"
+      },
+      {
+        "displayText": "ハツ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "やっつ"
+      },
+      {
+        "displayText": "よう"
+      },
+      {
+        "displayText": "や"
+      }
+    ]
+  },
+  {
+    "displayText": "九",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "キュウ"
+      },
+      {
+        "displayText": "ク"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "ここのつ"
+      }
+    ]
+  },
+  {
+    "displayText": "十",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "ジュウ"
+      },
+      {
+        "displayText": "ジ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "とう"
+      }
+    ]
+  },
+  {
+    "displayText": "火",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "ヒ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "か"
+      }
+    ]
+  },
+  {
+    "displayText": "今",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "コン"
+      },
+      {
+        "displayText": "キン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "いま"
+      }
+    ]
+  },
+  {
+    "displayText": "六",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "ロク"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "むっつ"
+      },
+      {
+        "displayText": "むい"
+      },
+      {
+        "displayText": "む"
+      }
+    ]
+  },
+  {
+    "displayText": "友",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "ユウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "とも"
+      }
+    ]
+  },
+  {
+    "displayText": "五",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "ゴ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "いつつ"
+      }
+    ]
+  },
+  {
+    "displayText": "図",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "ズ"
+      },
+      {
+        "displayText": "ト"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "はかる"
+      }
+    ]
+  },
+  {
+    "displayText": "英",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "エイ"
+      }
+    ]
+  },
+  {
+    "displayText": "書",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "ショ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "かく"
+      }
+    ]
+  },
+  {
+    "displayText": "留",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "リュウ"
+      },
+      {
+        "displayText": "ル"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "とまる"
+      },
+      {
+        "displayText": "とどまる"
+      }
+    ]
+  },
+  {
+    "displayText": "館",
+    "jlptLevel": "N",
+    "onValues": [
+      {
+        "displayText": "カン"
+      }
+    ]
+  }
+]
