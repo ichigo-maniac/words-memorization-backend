@@ -1,8 +1,11 @@
 package com.words.memorization.words.management.facade.services.impl;
 
 import com.words.memorization.words.common.exceptions.BusinessException;
+import com.words.memorization.words.common.models.PagedOutput;
+import com.words.memorization.words.common.models.Paging;
 import com.words.memorization.words.facades.common.clients.WordsServiceClient;
 import com.words.memorization.words.facades.common.dto.WordDto;
+import com.words.memorization.words.facades.common.enums.JLPTLevel;
 import com.words.memorization.words.facades.common.models.PostWordModel;
 import com.words.memorization.words.management.facade.api.model.PostWordInput;
 import com.words.memorization.words.management.facade.mapping.WordsMapper;
@@ -30,6 +33,11 @@ public class WordsClientServiceImpl implements WordsClientService {
     @Override
     public WordDto getWordById(@NotNull UUID wordId) {
         return wordsServiceClient.getWordById(wordId);
+    }
+
+    @Override
+    public PagedOutput<WordDto> getWordsList(JLPTLevel jlptLevel, @NotNull Paging paging) {
+        return wordsServiceClient.getWordsList(paging.getPage(), paging.getPageSize(), jlptLevel);
     }
 
     @Override

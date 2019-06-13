@@ -35,6 +35,8 @@ public interface WordsMapper {
 
     WordDto toWordDto(WordEntity wordEntity);
 
+    List<WordDto> toWordDtoList(List<WordEntity> wordEntities);
+
     WordEntity toWordEntity(PostWordInput wordInput);
 
 }

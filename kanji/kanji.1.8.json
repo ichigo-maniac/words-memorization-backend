@@ -1,7 +1,7 @@
 [
   {
     "displayText": "七",
-    "jlptLevel": "N",
+    "jlptLevel": "N5",
     "onValues": [
       {
         "displayText": "シチ"
@@ -21,7 +21,7 @@
   },
   {
     "displayText": "八",
-    "jlptLevel": "N",
+    "jlptLevel": "N5",
     "onValues": [
       {
         "displayText": "ハチ"
@@ -44,7 +44,7 @@
   },
   {
     "displayText": "九",
-    "jlptLevel": "N",
+    "jlptLevel": "N5",
     "onValues": [
       {
         "displayText": "キュウ"
@@ -61,7 +61,7 @@
   },
   {
     "displayText": "十",
-    "jlptLevel": "N",
+    "jlptLevel": "N5",
     "onValues": [
       {
         "displayText": "ジュウ"
@@ -78,21 +78,21 @@
   },
   {
     "displayText": "火",
-    "jlptLevel": "N",
+    "jlptLevel": "N5",
     "onValues": [
       {
-        "displayText": "ヒ"
+        "displayText": "カ"
       }
     ],
     "kunValues": [
       {
-        "displayText": "か"
+        "displayText": "ひ"
       }
     ]
   },
   {
     "displayText": "今",
-    "jlptLevel": "N",
+    "jlptLevel": "N5",
     "onValues": [
       {
         "displayText": "コン"
@@ -109,7 +109,7 @@
   },
   {
     "displayText": "六",
-    "jlptLevel": "N",
+    "jlptLevel": "N5",
     "onValues": [
       {
         "displayText": "ロク"
@@ -129,7 +129,7 @@
   },
   {
     "displayText": "友",
-    "jlptLevel": "N",
+    "jlptLevel": "N5",
     "onValues": [
       {
         "displayText": "ユウ"
@@ -143,7 +143,7 @@
   },
   {
     "displayText": "五",
-    "jlptLevel": "N",
+    "jlptLevel": "N5",
     "onValues": [
       {
         "displayText": "ゴ"
@@ -157,7 +157,7 @@
   },
   {
     "displayText": "図",
-    "jlptLevel": "N",
+    "jlptLevel": "N4",
     "onValues": [
       {
         "displayText": "ズ"
@@ -174,7 +174,7 @@
   },
   {
     "displayText": "英",
-    "jlptLevel": "N",
+    "jlptLevel": "N4",
     "onValues": [
       {
         "displayText": "エイ"
@@ -183,7 +183,7 @@
   },
   {
     "displayText": "書",
-    "jlptLevel": "N",
+    "jlptLevel": "N5",
     "onValues": [
       {
         "displayText": "ショ"
@@ -197,7 +197,7 @@
   },
   {
     "displayText": "留",
-    "jlptLevel": "N",
+    "jlptLevel": "N3",
     "onValues": [
       {
         "displayText": "リュウ"
@@ -217,7 +217,7 @@
   },
   {
     "displayText": "館",
-    "jlptLevel": "N",
+    "jlptLevel": "N4",
     "onValues": [
       {
         "displayText": "カン"

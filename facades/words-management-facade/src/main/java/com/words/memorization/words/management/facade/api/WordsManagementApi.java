@@ -2,7 +2,10 @@ package com.words.memorization.words.management.facade.api;
 
 import com.words.memorization.words.common.api.ApiBase;
 import com.words.memorization.words.common.exceptions.ResourceNotFoundException;
+import com.words.memorization.words.common.models.PagedOutput;
+import com.words.memorization.words.common.models.Paging;
 import com.words.memorization.words.facades.common.dto.WordDto;
+import com.words.memorization.words.management.facade.api.model.GetWordsListInput;
 import com.words.memorization.words.management.facade.api.model.PostWordInput;
 import com.words.memorization.words.management.facade.services.WordsClientService;
 import io.swagger.annotations.Api;
@@ -45,6 +48,11 @@ public class WordsManagementApi extends ApiBase {
         }
     }
 
+    @ApiOperation(value = "Search words")
+    @GetMapping("/words/words_list")
+    public PagedOutput<WordDto> getKanjiList(@Valid GetWordsListInput getWordsListInput, @Valid Paging paging) {
+        return wordsClientService.getWordsList(getWordsListInput.getJlptLevel(), paging);
+    }
 
     @ApiOperation(value = "Create a new word")
     @PostMapping(value = "/words//word")
