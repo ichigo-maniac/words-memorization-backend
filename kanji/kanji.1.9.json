@@ -1,0 +1,221 @@
+[
+  {
+    "displayText": "小",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ショウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "ちいさい"
+      },
+      {
+        "displayText": "こ"
+      }
+    ]
+  },
+  {
+    "displayText": "千",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "セン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "ち"
+      }
+    ]
+  },
+  {
+    "displayText": "月",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ゲツ"
+      },
+      {
+        "displayText": "ガツ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "つき"
+      }
+    ]
+  },
+  {
+    "displayText": "水",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "スイ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "みず"
+      }
+    ]
+  },
+  {
+    "displayText": "白",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ハク"
+      },
+      {
+        "displayText": "ビャク"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "しろい"
+      }
+    ]
+  },
+  {
+    "displayText": "百",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ヒャク"
+      }
+    ]
+  },
+  {
+    "displayText": "毎",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "マイ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "ごと"
+      }
+    ]
+  },
+  {
+    "displayText": "近",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "キン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "ちかい"
+      }
+    ]
+  },
+  {
+    "displayText": "明",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "メイ"
+      },
+      {
+        "displayText": "ミョウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "あかるい"
+      },
+      {
+        "displayText": "あきらか"
+      }
+    ]
+  },
+  {
+    "displayText": "東",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "トウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "ひがし"
+      }
+    ]
+  },
+  {
+    "displayText": "京",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "ケイ"
+      },
+      {
+        "displayText": "キョウ"
+      }
+    ]
+  },
+  {
+    "displayText": "青",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "セイ"
+      },
+      {
+        "displayText": "ジョウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "あおい"
+      }
+    ]
+  },
+  {
+    "displayText": "茶",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "チャ"
+      },
+      {
+        "displayText": "サ"
+      }
+    ]
+  },
+  {
+    "displayText": "高",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "コウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "たかい"
+      }
+    ]
+  },
+  {
+    "displayText": "新",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "シン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "あたらしい"
+      }
+    ]
+  }
+]
