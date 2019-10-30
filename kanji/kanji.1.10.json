@@ -1,0 +1,256 @@
+[
+  {
+    "displayText": "午",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ゴ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "うま"
+      }
+    ]
+  },
+  {
+    "displayText": "行",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "コウ"
+      },
+      {
+        "displayText": "ギョウ"
+      },
+      {
+        "displayText": "アン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "いく"
+      },
+      {
+        "displayText": "ゆく"
+      },
+      {
+        "displayText": "おこなう"
+      }
+    ]
+  },
+  {
+    "displayText": "休",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "キュウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "やすむ"
+      }
+    ]
+  },
+  {
+    "displayText": "金",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "キン"
+      },
+      {
+        "displayText": "コン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "かね"
+      }
+    ]
+  },
+  {
+    "displayText": "始",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "キュウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "はじめる"
+      },
+      {
+        "displayText": "はじまる"
+      }
+    ]
+  },
+  {
+    "displayText": "前",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ゼン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "まえ"
+      }
+    ]
+  },
+  {
+    "displayText": "後",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ゴ"
+      },
+      {
+        "displayText": "コウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "あと"
+      },
+      {
+        "displayText": "のち"
+      },
+      {
+        "displayText": "うしろ"
+      }
+    ]
+  },
+  {
+    "displayText": "食",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ショク"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "たべる"
+      }
+    ]
+  },
+  {
+    "displayText": "帰",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "キ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "かえる"
+      },
+      {
+        "displayText": "かえす"
+      }
+    ]
+  },
+  {
+    "displayText": "時",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "ジ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "とき"
+      }
+    ]
+  },
+  {
+    "displayText": "起",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "キ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "おきる"
+      },
+      {
+        "displayText": "おこる"
+      },
+      {
+        "displayText": "おこす"
+      }
+    ]
+  },
+  {
+    "displayText": "堂",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "ドウ"
+      }
+    ]
+  },
+  {
+    "displayText": "終",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "シュウ"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "おわる"
+      },
+      {
+        "displayText": "おわる"
+      }
+    ]
+  },
+  {
+    "displayText": "晩",
+    "jlptLevel": "N3",
+    "onValues": [
+      {
+        "displayText": "バン"
+      }
+    ]
+  },
+  {
+    "displayText": "間",
+    "jlptLevel": "N5",
+    "onValues": [
+      {
+        "displayText": "カン"
+      },
+      {
+        "displayText": "ケン"
+      }
+    ],
+    "kunValues": [
+      {
+        "displayText": "あいだ"
+      },
+      {
+        "displayText": "ま"
+      }
+    ]
+  },
+  {
+    "displayText": "曜",
+    "jlptLevel": "N4",
+    "onValues": [
+      {
+        "displayText": "ヨウ"
+      }
+    ]
+  }
+]
