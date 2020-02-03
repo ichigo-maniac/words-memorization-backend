@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>words-memorization-services-registry</artifactId>
+    <artifactId>services-registry</artifactId>
 
     <!-- Dependencies -->
     <dependencies>
