@@ -1,6 +1,6 @@
-package com.words.memorization.words.facades.common.models;
+package com.words.memorization.connector.words.service.models;
 
-import com.words.memorization.words.facades.common.enums.JLPTLevel;
+import com.words.memorization.connector.words.service.enums.JLPTLevel;
 import lombok.Getter;
 import lombok.Setter;
 import java.util.List;

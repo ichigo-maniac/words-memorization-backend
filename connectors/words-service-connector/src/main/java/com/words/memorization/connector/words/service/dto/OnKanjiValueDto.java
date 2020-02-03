@@ -1,4 +1,4 @@
-package com.words.memorization.words.facades.common.dto;
+package com.words.memorization.connector.words.service.dto;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;

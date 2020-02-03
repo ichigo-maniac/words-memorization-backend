@@ -4,7 +4,7 @@ import com.words.memorization.words.common.api.ApiBase;
 import com.words.memorization.words.common.exceptions.ResourceNotFoundException;
 import com.words.memorization.words.common.models.PagedOutput;
 import com.words.memorization.words.common.models.Paging;
-import com.words.memorization.words.facades.common.dto.KanjiDto;
+import com.words.memorization.connector.words.service.dto.KanjiDto;
 import com.words.memorization.words.management.facade.api.model.GetKanjiListInput;
 import com.words.memorization.words.management.facade.api.model.PostKanjiInput;
 import com.words.memorization.words.management.facade.services.KanjiClientService;

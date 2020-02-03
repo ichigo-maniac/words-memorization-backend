@@ -1,4 +1,4 @@
-package com.words.memorization.words.facades.common.models;
+package com.words.memorization.connector.words.service.models;
 
 import lombok.Getter;
 import lombok.Setter;

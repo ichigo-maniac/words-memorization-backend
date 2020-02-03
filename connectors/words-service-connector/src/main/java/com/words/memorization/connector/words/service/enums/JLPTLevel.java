@@ -1,4 +1,4 @@
-package com.words.memorization.words.facades.common.enums;
+package com.words.memorization.connector.words.service.enums;
 
 public enum JLPTLevel {
 

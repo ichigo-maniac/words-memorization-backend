@@ -20,7 +20,7 @@
 
         <dependency>
             <groupId>com.words.memorization</groupId>
-            <artifactId>words-memorization-facades-common</artifactId>
+            <artifactId>words-service-connector</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

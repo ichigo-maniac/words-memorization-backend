@@ -4,7 +4,7 @@ import com.words.memorization.words.common.api.ApiBase;
 import com.words.memorization.words.common.exceptions.ResourceNotFoundException;
 import com.words.memorization.words.common.models.PagedOutput;
 import com.words.memorization.words.common.models.Paging;
-import com.words.memorization.words.facades.common.dto.WordDto;
+import com.words.memorization.connector.words.service.dto.WordDto;
 import com.words.memorization.words.management.facade.api.model.GetWordsListInput;
 import com.words.memorization.words.management.facade.api.model.PostWordInput;
 import com.words.memorization.words.management.facade.services.WordsClientService;

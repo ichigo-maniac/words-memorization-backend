@@ -10,7 +10,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients(basePackages = "com.words.memorization.words.facades.common")
+@EnableFeignClients(basePackages = "com.words.memorization.connector")
 @PropertySource(value = {"classpath:jackson.properties"})
 @ComponentScan(basePackageClasses = {WordsManagementFacadeApplication.class, GeneralConfiguration.class})
 public class WordsManagementFacadeApplication {

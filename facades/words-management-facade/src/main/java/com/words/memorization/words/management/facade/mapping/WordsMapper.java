@@ -1,9 +1,9 @@
 package com.words.memorization.words.management.facade.mapping;
 
-import com.words.memorization.words.facades.common.models.PostKanjiModel;
-import com.words.memorization.words.facades.common.models.PostKunKanjiValueModel;
-import com.words.memorization.words.facades.common.models.PostOnKanjiValueModel;
-import com.words.memorization.words.facades.common.models.PostWordModel;
+import com.words.memorization.connector.words.service.models.PostKanjiModel;
+import com.words.memorization.connector.words.service.models.PostKunKanjiValueModel;
+import com.words.memorization.connector.words.service.models.PostOnKanjiValueModel;
+import com.words.memorization.connector.words.service.models.PostWordModel;
 import com.words.memorization.words.management.facade.api.model.PostKanjiInput;
 import com.words.memorization.words.management.facade.api.model.PostKunKanjiValueInput;
 import com.words.memorization.words.management.facade.api.model.PostOnKanjiValueInput;

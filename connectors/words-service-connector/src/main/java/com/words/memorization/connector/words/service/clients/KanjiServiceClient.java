@@ -1,9 +1,9 @@
-package com.words.memorization.words.facades.common.clients;
+package com.words.memorization.connector.words.service.clients;
 
+import com.words.memorization.connector.words.service.dto.KanjiDto;
+import com.words.memorization.connector.words.service.enums.JLPTLevel;
 import com.words.memorization.words.common.models.PagedOutput;
-import com.words.memorization.words.facades.common.dto.KanjiDto;
-import com.words.memorization.words.facades.common.enums.JLPTLevel;
-import com.words.memorization.words.facades.common.models.PostKanjiModel;
+import com.words.memorization.connector.words.service.models.PostKanjiModel;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import java.util.UUID;

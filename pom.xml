@@ -104,7 +104,7 @@
         <module>infrastructure/services-registry</module>
         <module>services/users-service</module>
         <module>services/words-service</module>
-        <module>facades/words-memorization-facades-common</module>
+        <module>connectors/words-service-connector</module>
         <module>facades/words-management-facade</module>
     </modules>
 
