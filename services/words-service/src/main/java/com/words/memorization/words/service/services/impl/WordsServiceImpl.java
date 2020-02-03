@@ -1,5 +1,6 @@
 package com.words.memorization.words.service.services.impl;
 
+import com.words.memorization.words.common.exceptions.BusinessError;
 import com.words.memorization.words.common.exceptions.BusinessException;
 import com.words.memorization.words.common.utils.SpecificationUtils;
 import com.words.memorization.words.service.api.model.PostWordInput;
@@ -29,13 +30,12 @@ public class WordsServiceImpl implements WordsService {
 
     @Override
     public WordEntity getWordByDisplayText(@NotNull String displayText) {
-        return wordRepository.getWordByDisplayText(displayText);
+        return wordRepository.getWordByDisplayText(displayText).orElseThrow(() -> new BusinessException(BusinessError.E000, "Word with display text " + displayText + " doesn't exist"));
     }
 
     @Override
     public WordEntity getWordById(@NotNull UUID wordId) {
-        Optional<WordEntity> wordResult = wordRepository.findById(wordId);
-        return wordResult.orElse(null);
+        return wordRepository.findById(wordId).orElseThrow(() -> new BusinessException(BusinessError.E000, "Word with id " + wordId + " doesn't exist"));
     }
 
     @Override

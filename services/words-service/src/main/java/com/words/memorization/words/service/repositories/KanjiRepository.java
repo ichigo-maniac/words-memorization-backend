@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+import java.util.Optional;
 import java.util.UUID;
 
 public interface KanjiRepository extends JpaRepository<KanjiEntity, UUID>, JpaSpecificationExecutor<KanjiEntity>  {
@@ -14,12 +15,12 @@ public interface KanjiRepository extends JpaRepository<KanjiEntity, UUID>, JpaSp
             "LEFT JOIN FETCH kanji.onValues " +
             "LEFT JOIN FETCH kanji.kunValues " +
             "WHERE kanji.displayText = :displayText")
-    KanjiEntity getKanjiByDisplayText(@Param("displayText") String displayText);
+    Optional<KanjiEntity> getKanjiByDisplayText(@Param("displayText") String displayText);
 
     @Query("SELECT kanji FROM Kanji as kanji " +
             "LEFT JOIN FETCH kanji.onValues " +
             "LEFT JOIN FETCH kanji.kunValues " +
             "WHERE kanji.id = :kanjiId")
-    KanjiEntity getKanjiById(@Param("kanjiId") UUID kanjiId);
+    Optional<KanjiEntity> getKanjiById(@Param("kanjiId") UUID kanjiId);
 
 }

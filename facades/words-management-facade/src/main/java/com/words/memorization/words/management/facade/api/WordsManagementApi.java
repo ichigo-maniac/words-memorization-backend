@@ -29,23 +29,13 @@ public class WordsManagementApi extends ApiBase {
     @GetMapping("/words/by_display_text/{displayText}")
     public WordDto getWordByDisplayText(@ApiParam(value = "Display text", example = "日本語")
                                           @PathVariable("displayText") String displayText) {
-        WordDto word =  wordsClientService.getWordByDisplayText(displayText);
-        if (word != null) {
-            return word;
-        } else {
-            throw new ResourceNotFoundException("E000", "A word hasn't been found");
-        }
+        return wordsClientService.getWordByDisplayText(displayText);
     }
 
     @ApiOperation(value = "Search a word by id")
     @GetMapping("/words/{wordId}")
     public WordDto getWordById(@ApiParam(value = "ID") @PathVariable("wordId") UUID wordId) {
-        WordDto word =  wordsClientService.getWordById(wordId);
-        if (word != null) {
-            return word;
-        } else {
-            throw new ResourceNotFoundException("E000", "A word hasn't been found");
-        }
+        return wordsClientService.getWordById(wordId);
     }
 
     @ApiOperation(value = "Search words")

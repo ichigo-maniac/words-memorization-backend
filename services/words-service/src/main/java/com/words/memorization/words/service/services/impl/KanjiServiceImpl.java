@@ -1,5 +1,6 @@
 package com.words.memorization.words.service.services.impl;
 
+import com.words.memorization.words.common.exceptions.BusinessError;
 import com.words.memorization.words.common.exceptions.BusinessException;
 import com.words.memorization.words.common.utils.SpecificationUtils;
 import com.words.memorization.words.service.api.model.PostKanjiInput;
@@ -28,12 +29,12 @@ public class KanjiServiceImpl implements KanjiService {
 
     @Override
     public KanjiEntity getKanjiByDisplayText(@NotNull String displayText) {
-        return kanjiRepository.getKanjiByDisplayText(displayText);
+        return kanjiRepository.getKanjiByDisplayText(displayText).orElseThrow(() -> new BusinessException(BusinessError.E000, "Kanji with display text " + displayText + " doesn't exist"));
     }
 
     @Override
     public KanjiEntity getKanjiById(@NotNull UUID kanjiId) {
-        return kanjiRepository.getKanjiById(kanjiId);
+        return kanjiRepository.getKanjiById(kanjiId).orElseThrow(() -> new BusinessException(BusinessError.E000, "Kanji with id " + kanjiId + " doesn't exist"));
     }
 
     @Override

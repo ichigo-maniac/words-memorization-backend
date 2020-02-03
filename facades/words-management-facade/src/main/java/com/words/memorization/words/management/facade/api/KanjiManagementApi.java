@@ -28,23 +28,13 @@ public class KanjiManagementApi extends ApiBase {
     @GetMapping("/kanji/by_display_text/{displayText}")
     public KanjiDto getKanjiByDisplayText(@ApiParam(value = "Display text", example = "日")
                                           @PathVariable("displayText") String displayText) {
-        KanjiDto kanji =  kanjiClientService.getKanjiByDisplayText(displayText);
-        if (kanji != null) {
-            return kanji;
-        } else {
-            throw new ResourceNotFoundException("E000", "Kanji hasn't been found");
-        }
+        return kanjiClientService.getKanjiByDisplayText(displayText);
     }
 
     @ApiOperation(value = "Search a kanji by id")
     @GetMapping("/kanji/{kanjiId}")
     public KanjiDto getKanjiById(@ApiParam(value = "ID") @PathVariable("kanjiId") UUID kanjiId) {
-        KanjiDto kanji =  kanjiClientService.getKanjiById(kanjiId);
-        if (kanji != null) {
-            return kanji;
-        } else {
-            throw new ResourceNotFoundException("E000", "Kanji hasn't been found");
-        }
+        return kanjiClientService.getKanjiById(kanjiId);
     }
 
     @ApiOperation(value = "Search kanji items")
