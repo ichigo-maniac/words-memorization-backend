@@ -99,6 +99,7 @@
      <!--Modules-->
     <modules>
         <module>infrastructure/words-memorization-common</module>
+        <module>infrastructure/words-memorization-common-services</module>
         <module>infrastructure/words-memorization-cloud-config</module>
         <module>infrastructure/words-memorization-services-registry</module>
         <module>services/users-service</module>

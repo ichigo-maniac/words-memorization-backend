@@ -15,7 +15,6 @@ import java.util.Map;
 
 public abstract class ApiBase {
 
-
     @SafeVarargs
     protected final Pageable makePageable(
             Paging paging,

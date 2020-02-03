@@ -1,5 +1,6 @@
 package com.words.memorization.words.service.entities;
 
+import com.words.memorization.common.services.entities.AbstractEntity;
 import com.words.memorization.words.service.enums.JLPTLevel;
 import lombok.Getter;
 import lombok.Setter;

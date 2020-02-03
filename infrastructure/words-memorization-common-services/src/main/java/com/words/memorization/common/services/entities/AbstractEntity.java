@@ -1,10 +1,9 @@
-package com.words.memorization.words.service.entities;
+package com.words.memorization.common.services.entities;
 
+import javax.persistence.*;
 import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
-
-import javax.persistence.*;
 
 @MappedSuperclass
 public abstract class AbstractEntity {
