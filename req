@@ -1,0 +1,3 @@
+Common connectors
+Remove swagger dependency from services
+Feign client exceptions processing (wrap to business exceptions)
