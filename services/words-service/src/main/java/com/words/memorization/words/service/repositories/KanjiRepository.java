@@ -23,4 +23,6 @@ public interface KanjiRepository extends JpaRepository<KanjiEntity, UUID>, JpaSp
             "WHERE kanji.id = :kanjiId")
     Optional<KanjiEntity> getKanjiById(@Param("kanjiId") UUID kanjiId);
 
+    Boolean existsByDisplayText(String displayText);
+
 }

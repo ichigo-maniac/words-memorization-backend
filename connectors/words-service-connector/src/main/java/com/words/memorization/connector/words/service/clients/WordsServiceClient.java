@@ -15,6 +15,9 @@ public interface WordsServiceClient {
     @GetMapping("/api/words/by_display_text/{displayText}")
     WordDto getWordByDisplayText(@PathVariable("displayText") String displayText);
 
+    @GetMapping("/api/words/exists_by_display_text/{displayText}")
+    Boolean wordExistsByDisplayText(@PathVariable("displayText") String displayText);
+
     @GetMapping("/api/words/{wordId}")
     WordDto getWordById(@PathVariable("wordId") UUID wordId);
 

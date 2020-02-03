@@ -13,6 +13,8 @@ public interface WordsService {
 
     WordEntity getWordByDisplayText(@NotNull String displayText);
 
+    Boolean wordExistsByDisplayText(@NotNull String displayText);
+
     WordEntity getWordById(@NotNull UUID wordId);
 
     Page<WordEntity> getWordsList(JLPTLevel jlptLevel, @NotNull Pageable pageable);

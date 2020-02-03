@@ -13,6 +13,8 @@ public interface KanjiService {
 
     KanjiEntity getKanjiByDisplayText(@NotNull String displayText);
 
+    Boolean kanjiExistsByDisplayText(@NotNull String displayText);
+
     KanjiEntity getKanjiById(@NotNull UUID kanjiId);
 
     Page<KanjiEntity> getKanjiList(JLPTLevel jlptLevel, @NotNull Pageable pageable);

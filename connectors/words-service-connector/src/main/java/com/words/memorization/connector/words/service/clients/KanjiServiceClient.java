@@ -14,6 +14,9 @@ public interface KanjiServiceClient {
     @GetMapping("/api/kanji/by_display_text/{displayText}")
     KanjiDto getKanjiByDisplayText(@PathVariable("displayText") String displayText);
 
+    @GetMapping("/api/kanji/exists_by_display_text/{displayText}")
+    Boolean kanjiExistsByDisplayText(@PathVariable("displayText") String displayText);
+
     @GetMapping("/api/kanji/{kanjiId}")
     KanjiDto getKanjiById(@PathVariable("kanjiId") UUID kanjiId);
 

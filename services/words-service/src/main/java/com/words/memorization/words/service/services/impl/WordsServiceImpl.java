@@ -34,6 +34,11 @@ public class WordsServiceImpl implements WordsService {
     }
 
     @Override
+    public Boolean wordExistsByDisplayText(@NotNull String displayText) {
+        return wordRepository.existsByDisplayText(displayText);
+    }
+
+    @Override
     public WordEntity getWordById(@NotNull UUID wordId) {
         return wordRepository.findById(wordId).orElseThrow(() -> new BusinessException(BusinessError.E000, "Word with id " + wordId + " doesn't exist"));
     }

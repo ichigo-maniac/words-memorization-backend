@@ -15,4 +15,6 @@ public interface WordRepository extends JpaRepository<WordEntity, UUID>, JpaSpec
             "WHERE word.displayText = :displayText")
     Optional<WordEntity> getWordByDisplayText(@Param("displayText") String displayText);
 
+    Boolean existsByDisplayText(String displayText);
+
 }

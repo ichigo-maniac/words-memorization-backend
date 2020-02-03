@@ -41,7 +41,7 @@ public class KanjiClientServiceImpl implements KanjiClientService {
 
     @Override
     public KanjiDto createKanji(@NotNull PostKanjiInput kanjiInput) {
-        if (kanjiServiceClient.getKanjiByDisplayText(kanjiInput.getDisplayText()) != null) {
+        if (kanjiServiceClient.kanjiExistsByDisplayText(kanjiInput.getDisplayText())) {
             throw new BusinessException("E00", "A kanji with display text " + kanjiInput.getDisplayText() + " exists");
         }
         PostKanjiModel postKanjiModel = wordsMapper.toPostKanjiModel(kanjiInput);

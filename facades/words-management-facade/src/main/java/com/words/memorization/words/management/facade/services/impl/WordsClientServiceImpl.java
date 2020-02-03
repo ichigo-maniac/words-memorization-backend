@@ -42,7 +42,7 @@ public class WordsClientServiceImpl implements WordsClientService {
 
     @Override
     public WordDto createWord(@NotNull PostWordInput wordInput) {
-        if (wordsServiceClient.getWordByDisplayText(wordInput.getDisplayText()) != null) {
+        if (wordsServiceClient.wordExistsByDisplayText(wordInput.getDisplayText())) {
             throw new BusinessException("E00", "A word with display text " + wordInput.getDisplayText() + " exists");
         }
         PostWordModel postWordModel = wordsMapper.toPostWordModel(wordInput);

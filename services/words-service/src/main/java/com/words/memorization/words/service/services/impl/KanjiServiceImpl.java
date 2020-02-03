@@ -33,6 +33,11 @@ public class KanjiServiceImpl implements KanjiService {
     }
 
     @Override
+    public Boolean kanjiExistsByDisplayText(@NotNull String displayText) {
+        return kanjiRepository.existsByDisplayText(displayText);
+    }
+
+    @Override
     public KanjiEntity getKanjiById(@NotNull UUID kanjiId) {
         return kanjiRepository.getKanjiById(kanjiId).orElseThrow(() -> new BusinessException(BusinessError.E000, "Kanji with id " + kanjiId + " doesn't exist"));
     }
