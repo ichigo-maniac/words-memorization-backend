@@ -77,32 +77,16 @@
             <artifactId>validation-api</artifactId>
         </dependency>
 
-        <!-- Swagger -->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>${springfox.swagger.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>${springfox.swagger.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-bean-validators</artifactId>
-            <version>${springfox.swagger.version}</version>
-        </dependency>
-
     </dependencies>
 
      <!--Modules-->
     <modules>
         <module>infrastructure/common</module>
         <module>infrastructure/common-services</module>
+        <module>infrastructure/common-facades</module>
+        <module>infrastructure/common-connectors</module>
         <module>infrastructure/cloud-config</module>
         <module>infrastructure/services-registry</module>
-        <module>infrastructure/common-connectors</module>
 
         <module>services/users-service</module>
         <module>services/words-service</module>
