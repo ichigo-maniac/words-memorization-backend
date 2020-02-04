@@ -5,6 +5,7 @@ import com.words.memorization.words.common.exceptions.BusinessException;
 import com.words.memorization.words.common.exceptions.ResourceNotFoundException;
 import com.words.memorization.words.common.models.Output;
 import com.words.memorization.words.common.models.Error;
+import feign.FeignException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.http.HttpHeaders;
@@ -98,6 +99,13 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
             errors.add(new Error("V000", violation.getPropertyPath().toString(), violation.getMessage()));
         }
         return createResponse(errors, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler({FeignException.class})
+    public ResponseEntity<?> handleFeignExceptionException(FeignException ex, WebRequest request) {
+        Error error = new Error("E000", "Feign error", ex.toString());
+        log.error(error.toString(), ex);
+        return createResponse(Collections.singletonList(error), HttpStatus.resolve(ex.status()));
     }
 
     @ExceptionHandler({Exception.class})
