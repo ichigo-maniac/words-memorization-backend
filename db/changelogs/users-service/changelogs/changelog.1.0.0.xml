@@ -13,23 +13,20 @@
 
     <changeSet id="init-scheme" author="words_memorization">
 
-        <createTable tableName="users">
-            <column name="id" type="UUID" remarks="ID">
-                <constraints primaryKey="true" nullable="false"/>
+        <createTable tableName="users" remarks="Users">
+            <column name="id" type="UUID" remarks="Identifier">
+                <constraints primaryKey="true" primaryKeyName="pk_users"/>
             </column>
-            <column name="creation_time" type="TIMESTAMP" remarks="User's creation time">
+            <column name="created" type="TIMESTAMP" remarks="Creation datetime">
                 <constraints nullable="false"/>
             </column>
-            <column name="name" type="VARCHAR(255)" remarks="User's name">
+            <column name="email" type="VARCHAR(512)" remarks="E-mail">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="password" type="VARCHAR(512)" remarks="Password">
                 <constraints nullable="false"/>
             </column>
-            <column name="surname" type="VARCHAR(255)" remarks="User's surname">
-                <constraints nullable="false"/>
-            </column>
-            <column name="social_network_id" type="VARCHAR(255)" remarks="User's social network id">
-                <constraints nullable="false"/>
-            </column>
-            <column name="social_network_type" type="VARCHAR(255)" remarks="User's network type">
+            <column name="is_blocked" type="BOOLEAN" remarks="Is user blocked">
                 <constraints nullable="false"/>
             </column>
         </createTable>

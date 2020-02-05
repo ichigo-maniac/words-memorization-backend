@@ -109,8 +109,10 @@
         <module>services/words-service</module>
 
         <module>connectors/words-service-connector</module>
+        <module>connectors/users-service-connector</module>
 
         <module>facades/words-management-facade</module>
+        <module>facades/security-facade</module>
     </modules>
 
 </project>
